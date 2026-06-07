@@ -1,0 +1,66 @@
+{
+  "name": "fishkeeper",
+  "description": "Aquarium hobbyist community + care assistant.",
+  "url": "https://fishkeeper.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "fishkeeper-ai-mcp",
+      "name": "fishkeeper-ai-mcp",
+      "description": "Tool: fishkeeper-ai-mcp (part of fishkeeper.ai hive L5)"
+    },
+    {
+      "id": "pet-care-ai-mcp",
+      "name": "pet-care-ai-mcp",
+      "description": "Tool: pet-care-ai-mcp (part of fishkeeper.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'fishkeeper'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://fishkeeper.ai/oauth/authorize",
+          "tokenUrl": "https://fishkeeper.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": false,
+    "currency": "USD",
+    "amount": "0.00",
+    "freeCallsPerIPPerDay": "100"
+  }
+}
