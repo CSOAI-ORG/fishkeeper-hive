@@ -1,0 +1,21 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "fishkeeper",
+    "description": "Aquarium hobbyist community + care assistant.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://fishkeeper.ai"
+      }
+    ],
+    "capabilities": [
+      "fishkeeper-ai-mcp",
+      "pet-care-ai-mcp",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
