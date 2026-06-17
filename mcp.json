@@ -1,0 +1,14 @@
+{
+  "name": "fishkeeper.ai",
+  "title": "Fish Keeper — Aquarium Management",
+  "description": "AI-powered aquarium management: water quality monitoring, fish health tracking, and tank optimisation.",
+  "cluster": "CONSUMER",
+  "servers": [
+        { "id": "aquarium-mcp.sov3.meok.ai", "url": "https://aquarium-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "fish-health-mcp.sov3.meok.ai", "url": "https://fish-health-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "water-mcp.sov3.meok.ai", "url": "https://water-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
